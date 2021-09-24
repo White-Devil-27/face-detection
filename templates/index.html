@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <title>face detection</title>
+
+  <h1 class="text-center">Face Detection</h1>
+  <style>
+  </style>
+</head>
+
+<body>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="logo">
+    <input type="submit">
+  </form>
+  <!-- Detect face display area -->
+  <div class="container p-3">
+      <div class="col-sm-6 mx-auto">
+        <p>
+            <img src="{{url_for('static',filename='capture.png')}}" class="img-thumbnail" width="500" height="500" alt="Image will be displayed here.!">
+        </p>
+      </div>
+  </div>
+  <script>
+    
+  </script>
+</body>
+
+</html>
