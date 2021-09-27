@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <title>Face Detection</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,15 +13,20 @@
 
   <title>face detection</title>
 
-  <h1 class="text-center">Face Detection</h1>
+  <h1 class="text-center p-3 ">Face Detection</h1>
   <style>
+    .shadow {
+      box-shadow: 0 8px 6px -6px black;
+}
   </style>
 </head>
 
 <body>
   <form action="/upload" method="post" enctype="multipart/form-data">
-    <input type="file" name="logo">
-    <input type="submit">
+    <div class="d-flex justify-content-center p-4 bg-light container shadow">
+      <input type="file" name="logo" class="btn btn-primary ">
+      &nbsp;&nbsp;&nbsp;<input type="submit" value="Detect" class="btn btn-success p-2">
+    </div>
   </form>
   <!-- Detect face display area -->
   <div class="container p-3">

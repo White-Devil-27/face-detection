@@ -10,13 +10,13 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html',image='')
+    return render_template('index.html')
 
 @app.route('/upload',methods=['POST'])
 def upload(): 
 
     image = request.files['logo'].read()
-    print(type(image))
+    # print(type(image))
     
     image_PIL = Image.open(BytesIO(image))
     image_PIL.save("image.png")
