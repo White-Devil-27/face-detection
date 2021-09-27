@@ -4,3 +4,5 @@ opencv-python==4.5.3.56
 Pillow==8.3.2
 python-dotenv==0.15.0
 gunicorn==20.1.0
+libgl1-mesa-dev
+pyglview==1.3.4
